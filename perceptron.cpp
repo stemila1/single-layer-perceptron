@@ -28,7 +28,7 @@ Perceptron::Perceptron(const Perceptron &other)
 
 // get_learning_rate
 // Returns the learning rate of the Perceptron
-double Perceptron::get_learning_rate()
+double Perceptron::get_learning_rate() const
 {
   return learning_rate;
 }
@@ -42,7 +42,7 @@ void Perceptron::set_learning_rate(const double& lr)
 
 // get_threshold
 // Returns the threshold of the Perceptron
-double Perceptron::get_threshold()
+double Perceptron::get_threshold() const 
 {
   return threshold;
 }
@@ -52,4 +52,18 @@ double Perceptron::get_threshold()
 void Perceptron::set_threshold(const double& thresh)
 {
   threshold = thresh;
+}
+
+// get_weights
+// Returns the weights
+std::vector<double> Perceptron::get_weights() const
+{
+  return weights;
+}
+
+// set_weights
+// Sets the weights of the Perceptron to desired values
+void Perceptron::set_weights(const std::vector<double>& w)
+{
+  weights = w;
 }

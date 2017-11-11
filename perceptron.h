@@ -25,7 +25,7 @@ public:
     // Name:  get_learning_rate
     // Pre:   A Perceptron object
     // Post:  Returns the learning rate of the Perceptron
-    double get_learning_rate();
+    double get_learning_rate() const;
 
     // Name:  set_learning_rate
     // Pre:   A Perceptron object and a desired learning rate
@@ -35,7 +35,7 @@ public:
     // Name:  get_threshold
     // Pre:   A Perceptron object
     // Post:  Returns the threshold of the Perceptron
-    double get_threshold();
+    double get_threshold() const;
 
     // Name:  set_threshold
     // Pre:   A Perceptron object and a desired threshold
@@ -45,7 +45,7 @@ public:
     // Name:  get_weights
     // Pre:   A Perceptron object
     // Post:  Returns the weights  of the Perceptron
-    std::vector<double> get_weights();
+    std::vector<double> get_weights() const;
 
     // Name:  set_weights
     // Pre:   A Perceptron object and desired weights
